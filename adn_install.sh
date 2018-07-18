@@ -1,16 +1,16 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='ultranatum.conf'
-CONFIGFOLDER='/root/.ultranatumcore'
-COIN_DAEMON='ultranatumd'
-COIN_CLI='ultranatum-cli'
+CONFIG_FILE='adn.conf'
+CONFIGFOLDER='/root/.adn'
+COIN_DAEMON='adnd'
+COIN_CLI='adnd-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/ultranatum/ultranatum/releases/download/1.1.0.2/ultranatumcore-1.1.0.2-linux64.tar.gz'
+COIN_TGZ='https://github.com/adrenaline-project/adn/archive/v1.0.0.14.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Ultranatum'
-COIN_PORT=23654
-RPC_PORT=23655
+COIN_NAME='Adrenaline'
+COIN_PORT=23202
+RPC_PORT=23203
 
 NODEIP=$(curl -s4 api.ipify.org)
 
