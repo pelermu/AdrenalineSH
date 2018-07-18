@@ -1,5 +1,5 @@
-# Ultranatum
-Shell script to install a [Ultranatum Masternode](http://ultranatum.org/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
+# Adrenaline
+Shell script to install a [Adrenaline Masternode](http://Adnrenaline.org/) on a Linux server running Ubuntu 16.04. Use it on your own risk.
 ***
 
 ## Installation
@@ -14,7 +14,7 @@ bash ultranatum_install.sh
 After the MN is up and running, you need to configure the desktop wallet accordingly. Here are the steps:  
 1. Open the Ultranatum Desktop Wallet.  
 2. Go to RECEIVE and create a New Address: **MN1**  
-3. Send **3000** ULTRA to **MN1**. You need to send all 1000 coins in one single transaction.
+3. Send **10,000** ULTRA to **MN1**. You need to send all 1000 coins in one single transaction.
 4. Wait for 15 confirmations.  
 5. Go to **Help -> "Debug Window - Console"**  
 6. Type the following command: **masternode outputs**  
@@ -38,22 +38,22 @@ masternode start-alias MN1
 ```
 14. Login to your VPS and check your masternode status by running the following command:
 ```
-ultranatum-cli masternode status
+adn-cli masternode status
 ```
 ***
 
 ## Usage:
 ```
-ultranatum-cli masternode status  
-ultranatum-cli getinfo
+adn-cli masternode status  
+adn-cli getinfo
 ```
-Also, if you want to check/start/stop **Ultranatum**, run one of the following commands as **root**:
+Also, if you want to check/start/stop **Adrenaline**, run one of the following commands as **root**:
 
 ```
-systemctl status Ultranatum #To check if Ultranatum service is running  
-systemctl start Ultranatum #To start Ultranatum service  
-systemctl stop Ultranatum #To stop Ultranatum service  
-systemctl is-enabled Ultranatum #To check if Ultranatum service is enabled on boot  
+systemctl status adreline #To check if Ultranatum service is running  
+systemctl start adreline #To start Ultranatum service  
+systemctl stop adreline #To stop Ultranatum service  
+systemctl is-enabled adreline #To check if Ultranatum service is enabled on boot  
 ```  
 ***
 
