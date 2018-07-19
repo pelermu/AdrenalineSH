@@ -3,14 +3,14 @@
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='adn.conf'
 CONFIGFOLDER='/root/.adn'
-COIN_DAEMON='adnd'
-COIN_CLI='adnd-cli'
+COIN_DAEMON='dfsd'
+COIN_CLI='dfs-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/adrenaline-project/adn/archive/v1.0.0.14.tar.gz'
+COIN_TGZ='https://github.com/dfscoin/dfs/releases/download/v3.0.0.0/dfs-3.0.0-linux-bin.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='Adrenaline'
-COIN_PORT=23202
-RPC_PORT=23203
+COIN_NAME='DEFENSE'
+COIN_PORT=28991
+RPC_PORT=28992
 
 NODEIP=$(curl -s4 api.ipify.org)
 
